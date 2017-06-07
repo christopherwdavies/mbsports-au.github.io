@@ -21,10 +21,9 @@
 	  <ul class="nav navbar-nav navbar-right">
 		<li{% if page.url == "/index.html" %} class="active"{% endif %}><a href="/">Home <span class="sr-only">(current)</span></a></li>
 		<li{% if page.url == "/events/index.html" %} class="active"{% endif %}><a href="/events">Events</a></li>
-		<li><a href="{{prefix}}#standards">Our Standards</a></li>
 		<li><a href="{{prefix}}#models">Models</a></li>
 		<li{% if page.url == "/about/index.html" %} class="active"{% endif %}><a href="/about">About Us</a></li>
-		{% if site.country == "US" %}<li><a href="{{prefix}}#find-dealer">Find a Dealer</a></li>{% endif %}
+		{% if site.country == "AU" %}<li><a href="/contact">Contact</a></li>{% endif %}
 		{% if site.country == "AU" %}<li><a href="/our-locations">Our Locations</a></li>{% endif %}
 		<li><a href="{{ site.designer_base_url }}">Build Your MB</a></li>
 	  </ul>
